@@ -10,20 +10,20 @@ const menu = [
     to: "/",
   },
   {
-    label: "Giai đoạn đầu",
+    label: "Điều kiện",
     to: "/dai-hoi-8-9",
   },
   {
-    label: "Điều kiện",
+    label: "Nội dung",
     to: "/giai-doan-1",
   },
   {
-    label: "Đặc Trưng",
+    label: "Vai trò",
     to: "/dac-trung",
   },
  
   {
-    label: "Ví Dụ",
+    label: "Liên hệ",
     to: "/vi-du",
   },
   { label: "Quiz", to: "/quiz" },
@@ -54,7 +54,7 @@ const Header: React.FC = () => {
             className="w-18 h-9 rounded-l shadow-md bg-white/70 p-1"
           />
           <span className="text-xl font-extrabold text-white tracking-wide hidden sm:block drop-shadow-lg">
-            Chủ nghĩa xã hội
+            Tư tưởng Hồ Chí Minh
           </span>
 
         </Link>

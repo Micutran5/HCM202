@@ -43,10 +43,10 @@ const Footer: React.FC = () => {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
         <div className="mb-4 md:mb-0 flex flex-col items-center md:items-start">
           <span className="text-2xl font-extrabold mb-2 tracking-wide text-slate-100">
-            Chủ nghĩa xã hội và thời kỳ quá độ lên chủ nghĩa xã hội
+            Tư tưởng Hồ Chí Minh
           </span>
           <span className="text-sm text-slate-400">
-            © {new Date().getFullYear()} MLN131 - 3W_MLN131_02. All rights reserved.
+            © {new Date().getFullYear()} HCM202_Half1_SE1838. All rights reserved.
           </span>
         </div>
         <div className="flex flex-col items-center gap-2">

@@ -10,7 +10,7 @@ const LandingPage: React.FC = () => {
   const [step, setStep] = useState(0);
 
   const handleStart = () => {
-    setShowIntro(true);
+    navigate("/dai-hoi-8-9");
   };
 
   const handleNextStep = () => {
@@ -87,7 +87,7 @@ const LandingPage: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              Chào mừng đến môn Chủ Nghĩa Xã Hội Khoa Học 
+              Chào mừng đến môn Tư tưởng Hồ Chí Minh
             </motion.h1>
             <motion.p
               className="text-lg md:text-2xl text-white/90 mb-8 font-medium drop-shadow"
@@ -95,7 +95,8 @@ const LandingPage: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-Cơ sở lý luận Mác – Lênin về con đường đi lên chủ nghĩa xã hội ở Việt Nam 🇻🇳            </motion.p>
+              Hệ thống quan điểm, tư tưởng của Hồ Chí Minh về cách mạng Việt Nam 🇻🇳
+            </motion.p>
             <motion.button
               onClick={handleStart}
               className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg text-lg font-semibold shadow transition"
