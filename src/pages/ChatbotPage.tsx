@@ -11,7 +11,7 @@ const ChatbotPage: React.FC = () => (
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
       >
-        Chatbot hỏi đáp Chủ Nghĩa xã hội khoa học
+        Trợ lý học thuật HCM202 – Tư tưởng Hồ Chí Minh
       </motion.h2>
       <VoiceChatbot />
     </div>

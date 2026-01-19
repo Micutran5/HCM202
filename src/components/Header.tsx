@@ -26,10 +26,8 @@ const menu = [
     label: "Liên hệ",
     to: "/vi-du",
   },
-  { label: "Quiz", to: "/quiz" },
   { label: "Chatbot", to: "/chatbot" },
   { label: "AI Usage", to: "/ai-usage" },
-  { label: "Q&A", to: "/qa" },
 ];
 
 // ...existing code...

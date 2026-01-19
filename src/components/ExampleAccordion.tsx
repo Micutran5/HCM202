@@ -6,26 +6,24 @@ import { ChevronDown } from "lucide-react";
 
 const aiApplications = [
   {
-    title: "Sinh bộ Quiz theo đề cương học phần",
+    title: "ChatGPT",
     content:
-      "AI tạo nhanh 15+ câu trắc nghiệm kèm gợi ý và giải thích, bao phủ các chủ đề: thuyết trình",
+      "Được sử dụng để hỗ trợ soạn thảo, tổng hợp và hệ thống hóa nội dung tư tưởng Hồ Chí Minh theo đúng trọng tâm học thuật.",
   },
   {
-    title: "Chatbot hỏi–đáp giáo trình & văn kiện",
+    title: "Gemini Plus",
     content:
-      "Chatbot hỗ trợ tra cứu khái niệm, luận điểm then chốt có thể trả lời dạng văn bản và giọng nói (Text-to-Speech) để tăng tương tác tự học.",
+      "Hỗ trợ tạo hình ảnh và ảnh động phục vụ thiết kế website, giúp nội dung trở nên trực quan và sinh động hơn.",
   },
   {
-    title: "Tóm tắt & bản đồ khái niệm chương mục",
+    title: "Cursor",
     content:
-      "AI giúp tóm tắt mỗi chương, tạo “mind map/logic map” thể hiện mối liên hệ giữa các luận điểm ",
+      "Được ứng dụng trong quá trình viết, chỉnh sửa và tối ưu mã nguồn khi xây dựng website sản phẩm.",
   },
-  
-
   {
-    title: "Hỗ trợ thiết kế sản phẩm",
+    title: "Suno AI",
     content:
-      "AI hỗ trợ giảng viên thiết kế các sản phẩm học tập số như hình ảnh, infographics, video ngắn tóm tắt nội dung chính.",
+      "Hỗ trợ sáng tạo video nhạc nhằm truyền tải thông điệp về tinh thần đoàn kết dân tộc theo cách hiện đại và dễ tiếp cận.",
   },
 ];
 
@@ -39,7 +37,7 @@ const ExampleAccordion: React.FC = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.7 }}
       >
-        Ứng dụng AI trong môn Chủ nghĩa xã hội khoa học 
+        Ứng dụng AI trong dự án 
       </motion.h2>
       <motion.p
         className="text-sm md:text-base text-slate-400 mb-7 text-center italic"
@@ -48,7 +46,7 @@ const ExampleAccordion: React.FC = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.7, delay: 0.2 }}
       >
-        *Nội dung bám sát đề cương và giáo trình môn Chủ nghĩa xã hội khoa học.*
+        *Các công cụ AI được sử dụng trong quá trình phát triển website.*
       </motion.p>
       <Accordion.Root
         type="single"

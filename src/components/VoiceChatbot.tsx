@@ -49,31 +49,61 @@ const VoiceChatbot: React.FC = () => {
   };
 
   const baseGuidelines = `
-Bạn là trợ lý học thuật cho *môn Lịch sử Đảng Cộng Sản Việt Nam*. 
-• Cơ sở tham chiếu chính: **Giáo trình Tư tưởng Hồ Chí Minh 2019**.
-• Nếu câu hỏi nằm ngoài giáo trình, hãy trả lời ngắn gọn theo kiến thức nền tảng, và nói rõ là “nội dung ngoài giáo trình”. Nếu không chắc chắn thì nói “mình chưa có đủ căn cứ trong giáo trình”.
-• Không bịa đặt, không suy diễn quá mức, không đưa số liệu/ trích dẫn nếu không chắc chắn.
-• Trả lời hoàn toàn bằng **tiếng Việt**, ưu tiên **ngắn gọn – súc tích – dễ hiểu**, dùng **Markdown** gọn gàng.
-• Luôn cố gắng chỉ rõ **Chương/Mục** trong giáo trình khi có thể (ví dụ: “Xem Chương 1, mục 1.2”).
+Bạn là trợ lý học thuật chuyên về môn **Tư tưởng Hồ Chí Minh (HCM202)** theo giáo trình chính thức:
+“**Giáo trình Tư tưởng Hồ Chí Minh**” – **NXB Chính trị Quốc gia Sự thật**.
+
+Nhiệm vụ của bạn:
+- Trả lời các câu hỏi liên quan đến tư tưởng Hồ Chí Minh một cách **CHÍNH XÁC, NGẮN GỌN, CÓ HỆ THỐNG**.
+- Ưu tiên nội dung đúng chương, đúng thuật ngữ học thuật.
+- Trình bày mạch lạc, dễ học, phù hợp cho sinh viên đại học (đặc biệt là FPT University).
+
+Phạm vi kiến thức:
+- Khái niệm, nội dung, vai trò, ý nghĩa của các tư tưởng Hồ Chí Minh.
+- Phân tích theo từng chương (đặc biệt là **Chương V: Tư tưởng Hồ Chí Minh về Đại đoàn kết dân tộc** khi liên quan).
+- Liên hệ thực tiễn ở mức học thuật, tránh suy diễn hoặc quan điểm cá nhân cực đoan.
+
+Cách trả lời:
+- Mặc định trình bày theo cấu trúc: **Khái niệm → Nội dung → Vai trò/Ý nghĩa → Liên hệ (nếu cần)**.
+- Sử dụng gạch đầu dòng, tiêu đề rõ ràng.
+- Có thể trích dẫn các câu nói nổi bật của Hồ Chí Minh (đúng tinh thần giáo trình).
+- Không lan man, không dùng ngôn ngữ đời thường.
+
+Hạn chế:
+- Không bịa thông tin ngoài giáo trình.
+- Không đưa quan điểm chính trị cá nhân.
+- Không suy đoán sự kiện chưa có kết luận chính thức.
+
+Khi người dùng yêu cầu:
+- “Tóm tắt”: trả lời ngắn gọn, dễ học thuộc.
+- “Phân tích”: trả lời sâu hơn, có luận điểm rõ ràng.
+- “Ôn tập”: tạo câu hỏi trắc nghiệm hoặc tự luận kèm đáp án (không giải thích nếu không yêu cầu).
+
+Luôn giữ văn phong học thuật, trung lập và phù hợp với môn học.
 `;
 
   const textModeInstruction = `
-Trình bày có cấu trúc theo mẫu:
-### Tóm lược nhanh
+Nếu người học có yêu cầu “Tóm tắt/Phân tích/Ôn tập” thì ưu tiên đúng định dạng đó.
+Nếu không có yêu cầu đặc biệt, trình bày theo cấu trúc:
+### Khái niệm
 - …
 
-### Nội dung chính
-1) …
-2) …
+### Nội dung
+- …
+
+### Vai trò/Ý nghĩa
+- …
+
+### Liên hệ (nếu cần)
+- …
 
 ### Tham chiếu giáo trình
 - Chương …, mục … (nếu xác định được)
 `;
 
   const voiceModeInstruction = `
-Trả lời theo phong cách gần gũi, dễ hiểu; có thể thêm ví dụ đời thường/ngắn, so sánh vui nhưng **không làm mất tính chính xác**.
-Không viết tắt (ví dụ: viết đầy đủ “Chủ nghĩa xã hội”), in đậm các keyword lên.
-Nếu xác định được, nêu Chương/Mục ở cuối câu trả lời: “(Tham chiếu: Chương …, mục …)”.
+Trả lời **ngắn gọn, mạch lạc, học thuật**; tránh ngôn ngữ đời thường và tránh suy diễn.
+Không viết tắt các thuật ngữ quan trọng; nhấn mạnh keyword bằng **in đậm**.
+Nếu xác định được, nêu Chương/Mục ở cuối: “(Tham chiếu: Chương …, mục …)”.
 `;
 
   const handleSend = async () => {
@@ -94,8 +124,7 @@ ${input}
       } else {
         prompt += `
 ${voiceModeInstruction}
-Đối với câu trả lời bằng giọng nói, giới hạn trong khoảng 100 - 150 từ nhưng đảm bảo vẫn đầy đủ các thông tin kèm các so sánh minh họa
-giúp người nghe dễ hiểu, cảm thấy thú vị.
+Đối với câu trả lời bằng giọng nói, giới hạn trong khoảng 110 - 160 từ, súc tích nhưng đủ ý theo cấu trúc ưu tiên.
 **Câu hỏi của người học**:
 ${input}
 `;
@@ -128,11 +157,10 @@ ${input}
         transition={{ duration: 0.7, delay: 0.2 }}
       >
         <h2 className="text-2xl font-bold mb-1 text-slate-50 text-center">
-          Chatbot AI – Chủ Nghĩa Xã Hội Khoa Học
+          Trợ lý học thuật HCM202 – Tư tưởng Hồ Chí Minh
         </h2>
         <p className="text-center text-slate-400 text-sm mb-4">
-          Ưu tiên trả lời theo <i>Chủ Nghĩa Xã Hội Khoa Học</i>; có thể
-          nêu rõ Chương/Mục khi trích dẫn.
+          Trả lời theo giáo trình chính thức; ưu tiên đúng chương/mục và thuật ngữ học thuật.
         </p>
 
         <div className="flex gap-4 mb-6 justify-center">
@@ -165,7 +193,7 @@ ${input}
             <>
               {messages.length === 0 && (
                 <div className="text-slate-400 text-center mt-12 text-base select-none">
-                  Hãy hỏi bất kỳ điều gì về môn Chủ Nghĩa xã hội khoa học!
+                  Hãy hỏi bất kỳ nội dung nào về môn Tư tưởng Hồ Chí Minh (HCM202).
                 </div>
               )}
               {messages.map((msg, idx) => (

@@ -37,7 +37,9 @@ const ChuNghiaXaHoiPage: React.FC = () => {
               </blockquote>
               <p className="text-sm text-slate-400">
               Đại đoàn kết không đồng nghĩa với việc xóa bỏ sự khác biệt, mà tôn trọng những lợi ích khác biệt chính đáng, đồng thời kiên quyết chống lại lợi ích cục bộ, cá nhân làm phương hại đến lợi ích chung.
-              Lợi ích chung của dân tộc chính là “mẫu số chung” bảo đảm cho sự đoàn kết bền vững và lâu dài.            </p>
+              Lợi ích chung của dân tộc chính là "mẫu số chung" bảo đảm cho sự đoàn kết bền vững và lâu dài.            </p>
+
+              
             </div>
             <div className="relative order-1 lg:order-2">
               <img 
@@ -126,12 +128,16 @@ Kết luận        </h2>
                 <div className="bg-slate-800/40 border border-slate-700 rounded-xl px-4 py-3">
                   <div className="font-semibold text-slate-200 mb-1">Thứ nhất</div>
                   <p className="text-sm text-slate-400">
-                  Theo tư tưởng Hồ Chí Minh, đại đoàn kết dân tộc chỉ được xây dựng vững chắc khi lấy lợi ích chung làm điểm quy tụ, kế thừa truyền thống đoàn kết của dân tộc và đặt trọn niềm tin vào nhân dân. </p>
+                  Lấy cái chung để hạn chế cái riêng, đặt điểm tương đồng làm
+                    cơ sở để quy tụ lực lượng; tôn trọng những khác biệt chính
+                    đáng, miễn là không trái với lợi ích của dân tộc và mục
+                    tiêu độc lập dân tộc gắn liền với chủ nghĩa xã hội.
+                  </p>
                 </div>
                 <div className="bg-slate-800/40 border border-slate-700 rounded-xl px-4 py-3">
                   <div className="font-semibold text-slate-200 mb-1">Thứ hai</div>
                   <p className="text-sm text-slate-400">
-                  Đây là những điều kiện mang tính nền tảng, quyết định sức mạnh và sự bền vững của khối đại đoàn kết toàn dân tộc.</p>
+                  Thực hiện đoàn kết trên cơ sở chân thành, khoan dung và tôn trọng sự khác biệt, gác lại những mâu thuẫn riêng để hướng tới mục tiêu chung là độc lập dân tộc, thống nhất đất nước và hạnh phúc của nhân dân.                  </p>
                 </div>
               </div>
             </div>

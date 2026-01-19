@@ -1,50 +1,62 @@
 import React from "react";
-import dieukienImg from "../assets/dieukien.png";
-import macLeninImg from "../assets/mac-lenin-04.png";
-import sosanhImg from "../assets/sosanh.png";
+import noiDungHeaderImg from "../assets/noidung.jpg";
+import khoiDaiDoanKetImg from "../assets/khoidaidoanket.jpg";
+import matTranImg from "../assets/mattran.jpg";
 
-const mocKinhTe = [
+const noiDungCards = [
   {
-    title: "Chủ nghĩa tư bản hình thành",
-    desc: "Sản xuất hàng hóa, thị trường và tích lũy tư bản phát triển mạnh.",
+    title: "Chủ thể",
+    desc: "Bao gồm mọi người dân Việt Nam (“con Rồng cháu Tiên”), không phân biệt dân tộc, tôn giáo, tuổi tác, giới tính, giàu nghèo, địa vị.",
   },
   {
-    title: "Cách mạng công nghiệp",
-    desc: "Máy móc, công nghiệp cơ khí thay thế lao động thủ công, năng suất tăng vượt bậc.",
+    title: "Nền tảng của khối đại đoàn kết",
+    desc: "Liên minh Công nhân – Nông dân – Trí thức.",
   },
   {
-    title: "Xã hội hóa sản xuất",
-    desc: "Sản xuất mang tính tập thể, liên kết rộng, phụ thuộc lẫn nhau về kinh tế.",
+    title: "Lý do",
+    desc: "Công nhân – nông dân đông đảo, bị áp bức nặng nề, có tinh thần cách mạng bền bỉ; trí thức giữ vai trò quan trọng trong xây dựng CNXH.",
   },
   {
-    title: "Mâu thuẫn ngày càng sâu sắc",
-    desc: "Tính chất xã hội của sản xuất xung đột với chiếm hữu tư nhân tư bản chủ nghĩa.",
+    title: "Nguyên tắc cốt lõi",
+    desc: "Vững lập trường giai cấp công nhân, xử lý hài hòa quan hệ giai cấp – dân tộc.",
   },
 ];
 
-const chinhTriCards = [
-  {
-    title: "Mâu thuẫn giai cấp",
-    desc: "Mâu thuẫn cơ bản giữa giai cấp công nhân – đại diện cho lực lượng sản xuất mới – và giai cấp tư sản.",
-  },
-  {
-    title: "Giai cấp công nhân & Đảng Cộng sản",
-    desc: "Giai cấp công nhân là sản phẩm trực tiếp của nền đại công nghiệp; Đảng Cộng sản ra đời làm đội tiên phong tổ chức và lãnh đạo.",
-  },
-];
-
-const voSanCards = [
+const matTranCards = [
   {
     title: "Bản chất",
-    desc: "Cách mạng của giai cấp công nhân và nhân dân lao động, dưới sự lãnh đạo của Đảng Cộng sản, nhằm lật đổ ách thống trị của giai cấp tư sản.",
+    desc: "Tổ chức chính trị – xã hội rộng lớn, quy tụ mọi tổ chức và cá nhân yêu nước.",
   },
   {
-    title: "Phương thức",
-    desc: "Thường được thực hiện bằng bạo lực cách mạng, lập nhà nước chuyên chính vô sản làm công cụ xây dựng xã hội mới.",
+    title: "Sự phát triển qua các thời kỳ lịch sử",
+    desc: "Tên gọi thay đổi theo giai đoạn, nhưng bản chất không đổi:",
+    items: [
+      "Hội Phản đế đồng minh (1930)",
+      "Mặt trận Dân chủ Đông Dương (1936)",
+      "Mặt trận Việt Minh (1941)",
+      "Mặt trận Liên Việt (1951)",
+      "Mặt trận Dân tộc Giải phóng Miền Nam (1960)",
+      "Mặt trận Tổ quốc Việt Nam (1955; 1976 đến nay)",
+    ],
+  },
+];
+
+const nguyenTacCards = [
+  {
+    title: "Hiệp thương dân chủ",
+    desc: "Bàn bạc công khai để thống nhất, tránh áp đặt; đặt lợi ích chung lên trên hết.",
   },
   {
-    title: "Mục tiêu",
-    desc: "Cải tạo xã hội cũ, xây dựng quan hệ sản xuất xã hội chủ nghĩa phù hợp với trình độ xã hội hóa lực lượng sản xuất, tiến tới kinh tế – xã hội cộng sản chủ nghĩa.",
+    title: "Đoàn kết chặt chẽ, lâu dài",
+    desc: "Chân thành, thân ái, giúp nhau cùng tiến bộ.",
+  },
+  {
+    title: "Đoàn kết gắn liền với đấu tranh",
+    desc: "Có phê bình – tự phê bình; đấu tranh để củng cố đoàn kết.",
+  },
+  {
+    title: "Cầu đồng tồn dị",
+    desc: "Lấy cái chung làm chính, tôn trọng khác biệt để quy tụ lực lượng.",
   },
 ];
 
@@ -56,7 +68,7 @@ const GiaiDoan1Page: React.FC = () => {
         <div className="max-w-6xl mx-auto">
           <div className="relative overflow-hidden rounded-3xl border border-slate-800 bg-slate-800/60 shadow-xl">
             <img
-              src={dieukienImg}
+              src={noiDungHeaderImg}
               alt="Điều kiện ra đời chủ nghĩa xã hội"
               className="absolute inset-0 h-full w-full object-cover"
               style={{ objectPosition: "50% 35%" }}
@@ -65,15 +77,15 @@ const GiaiDoan1Page: React.FC = () => {
 
             <div className="relative p-6 md:p-10 lg:p-12 space-y-3 max-w-3xl">
               <div className="text-[11px] md:text-xs uppercase tracking-[0.25em] text-slate-300">
-                HỌC THUYẾT MÁC – LÊNIN · Hình thái KT-XH • Thời kỳ quá độ • CNXH
+                TƯ TƯỞNG HỒ CHÍ MINH - CHƯƠNG V
               </div>
 
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight drop-shadow">
-                Điều kiện ra đời chủ nghĩa xã hội
+                NỘI DUNG & HÌNH THỨC TỔ CHỨC CỦA KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC
               </h1>
 
               <p className="text-sm md:text-base text-slate-200 max-w-2xl">
-                Dựa trên lý luận hình thái kinh tế – xã hội của C. Mác và được V.I. Lênin phát triển
+                Đại đoàn kết dân tộc là vấn đề sống còn của cách mạng Việt Nam
               </p>
             </div>
           </div>
@@ -81,89 +93,102 @@ const GiaiDoan1Page: React.FC = () => {
       </header>
 
       <main className="px-4 py-8 lg:py-12">
-        <div className="max-w-6xl mx-auto space-y-8">
+        <div className="max-w-6xl mx-auto space-y-10">
 
-          {/* Ảnh điều kiện */}
-          <div className="relative overflow-hidden rounded-2xl border border-slate-800 bg-slate-800/60 shadow-lg min-h-[260px] lg:min-h-[320px] flex flex-col">
-            <img
-              src={macLeninImg}
-              alt="Điều kiện hình thành CNXH"
-              className="absolute inset-0 h-full w-full object-cover"
-              style={{ objectPosition: "50% 35%" }}
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-slate-900/30 to-transparent" />
-            <div className="relative px-4 py-4 text-xs text-slate-200 border-t border-slate-700/60 backdrop-blur-[2px] bg-slate-900/30 mt-auto">
-              Minh họa tổng quan về các điều kiện hình thành CNXH.
+          {/* Cụm ảnh minh họa (đồng bộ tỉ lệ) */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
+            <div className="relative overflow-hidden rounded-2xl border border-slate-800 bg-slate-800/60 shadow-lg flex flex-col aspect-[16/9]">
+              <img
+                src={khoiDaiDoanKetImg}
+                alt="Khối đại đoàn kết dân tộc"
+                className="absolute inset-0 h-full w-full object-contain"
+                style={{ objectPosition: "50% 50%" }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-slate-900/30 to-transparent" />
+              <div className="relative px-4 py-3 text-xs text-slate-200 border-t border-slate-700/60 backdrop-blur-[2px] bg-slate-900/30 mt-auto">
+                Minh họa khối đại đoàn kết dân tộc.
+              </div>
+            </div>
+
+            <div className="relative overflow-hidden rounded-2xl border border-slate-800 bg-slate-800/60 shadow-lg flex flex-col aspect-[16/9]">
+              <img
+                src={matTranImg}
+                alt="Mặt trận Dân tộc Thống nhất"
+                className="absolute inset-0 h-full w-full object-contain"
+                style={{ objectPosition: "50% 50%" }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-slate-900/30 to-transparent" />
+              <div className="relative px-4 py-3 text-xs text-slate-200 border-t border-slate-700/60 backdrop-blur-[2px] bg-slate-900/30 mt-auto">
+                Minh họa Mặt trận Dân tộc Thống nhất.
+              </div>
             </div>
           </div>
 
           <div className="space-y-3">
             <p className="text-sm md:text-base text-slate-200 leading-relaxed">
-              Dựa trên lý luận hình thái kinh tế – xã hội của C. Mác và được V.I. Lênin phát triển, sự xuất hiện của chủ nghĩa xã hội gắn với quy luật vận động của chủ nghĩa tư bản và vai trò lịch sử của giai cấp công nhân hiện đại.
+              Đại đoàn kết dân tộc là vấn đề sống còn của cách mạng Việt Nam.
+              Khối đại đoàn kết cần được tổ chức chặt chẽ thông qua Mặt trận
+              Dân tộc Thống nhất.
             </p>
           </div>
 
-          {/* Section 1 */}
+          {/* Section 1: Nội dung và lực lượng */}
           <section className="space-y-3">
-            <h2 className="text-xl font-semibold text-orange-300">1. Điều kiện kinh tế</h2>
+            <h2 className="text-xl font-semibold text-orange-300">1. Nội dung và lực lượng: Đại đoàn kết là vấn đề sống còn</h2>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
-              {mocKinhTe.map((moc, idx) => (
-                <div key={moc.title} className="rounded-2xl border border-slate-800 bg-slate-800/60 p-4">
-                  <p className="text-xs font-semibold text-orange-300 mb-2">Mốc {idx + 1}</p>
-                  <h3 className="font-bold text-slate-100 mb-2">{moc.title}</h3>
-                  <p className="text-sm text-slate-300 leading-relaxed">{moc.desc}</p>
+            <div className="grid md:grid-cols-2 gap-4 mt-4 items-stretch">
+              {noiDungCards.map((item, idx) => (
+                <div key={item.title} className="rounded-2xl border border-slate-800 bg-slate-800/60 p-5 flex flex-col h-full">
+                  <p className="text-xs font-semibold text-orange-300 mb-2">
+                    {idx === 0 ? "Chủ thể" : idx === 1 ? "Nền tảng" : idx === 2 ? "Lý do" : "Nguyên tắc"}
+                  </p>
+                  <h3 className="text-lg font-bold text-slate-100 mb-2">{item.title}</h3>
+                  <p className="text-sm text-slate-300 leading-relaxed">
+                    {item.desc}
+                  </p>
                 </div>
               ))}
             </div>
           </section>
 
-          {/* Section 2 */}
+          {/* Section 2: Hình thức tổ chức */}
           <section className="space-y-3">
-            <h2 className="text-xl font-semibold text-orange-300">2. Điều kiện chính trị – xã hội</h2>
+            <h2 className="text-xl font-semibold text-orange-300">2. Hình thức tổ chức: Mặt trận Dân tộc Thống nhất</h2>
             <p className="text-sm text-slate-200 leading-relaxed">
-              Mâu thuẫn giai cấp ngày càng sâu sắc và sự trưởng thành của giai cấp công nhân, cùng sự ra đời của Đảng Cộng sản,
-              tạo tiền đề chính trị – xã hội cho cách mạng.
+              Khối đại đoàn kết được tập hợp trong một tổ chức vững chắc: Mặt trận Dân tộc Thống nhất.
             </p>
-            <div className="grid md:grid-cols-2 gap-4 mt-2">
-              {chinhTriCards.map((item) => (
-                <div key={item.title} className="rounded-2xl border border-slate-800 bg-slate-800/60 p-5">
+            <div className="grid md:grid-cols-2 gap-4 mt-3 items-stretch">
+              {matTranCards.map((item) => (
+                <div key={item.title} className="rounded-2xl border border-slate-800 bg-slate-800/60 p-5 flex flex-col h-full">
+                  <h3 className="text-lg font-bold text-slate-100 mb-2">{item.title}</h3>
+                  <p className="text-sm text-slate-300 leading-relaxed">{item.desc}</p>
+                  {"items" in item && Array.isArray(item.items) ? (
+                    <ul className="mt-3 space-y-1 text-sm text-slate-300 list-disc list-inside">
+                      {item.items.map((it) => (
+                        <li key={it}>{it}</li>
+                      ))}
+                    </ul>
+                  ) : null}
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* Section 3: Nguyên tắc xây dựng và hoạt động */}
+          <section className="space-y-3">
+            <h2 className="text-xl font-semibold text-orange-300">3. Nguyên tắc xây dựng và hoạt động của Mặt trận</h2>
+            <p className="text-sm text-slate-200 leading-relaxed">
+              Hồ Chí Minh nêu các nguyên tắc hoạt động chặt chẽ để khối đại đoàn kết vận hành hiệu quả:
+            </p>
+            <div className="grid md:grid-cols-2 gap-4 mt-3 items-stretch">
+              {nguyenTacCards.map((item) => (
+                <div key={item.title} className="rounded-2xl border border-slate-800 bg-slate-800/60 p-5 flex flex-col h-full">
                   <h3 className="text-lg font-bold text-slate-100 mb-2">{item.title}</h3>
                   <p className="text-sm text-slate-300 leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
           </section>
-
-          {/* Section 3 */}
-          <section className="space-y-3">
-            <h2 className="text-xl font-semibold text-orange-300">3. Cách mạng vô sản</h2>
-            <p className="text-sm text-slate-200 leading-relaxed">
-              Khi điều kiện kinh tế và chính trị – xã hội đã chín muồi, cách mạng vô sản trở thành con đường tất yếu thay thế chế độ tư bản bằng chế độ xã hội chủ nghĩa.
-            </p>
-            <div className="grid md:grid-cols-3 gap-4 mt-2">
-              {voSanCards.map((item) => (
-                <div key={item.title} className="rounded-2xl border border-slate-800 bg-slate-800/60 p-5">
-                  <h3 className="text-lg font-bold text-slate-100 mb-2">{item.title}</h3>
-                  <p className="text-sm text-slate-300 leading-relaxed">{item.desc}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          {/* Ảnh so sánh */}
-          <div className="relative overflow-hidden rounded-2xl border border-slate-800 bg-slate-800/60 mt-6 shadow-lg h-[230px] lg:h-[280px] flex flex-col">
-            <img
-              src={sosanhImg}
-              alt="Hình ảnh minh họa"
-              className="absolute inset-0 h-full w-full object-cover"
-              style={{ objectPosition: "50% 35%" }}
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-slate-900/30 to-transparent" />
-            <div className="relative px-4 py-3 text-xs text-slate-200 border-t border-slate-700/60 backdrop-blur-[2px] bg-slate-900/30 mt-auto">
-              Hình minh họa sự khác biệt giữa các điều kiện kinh tế – chính trị – xã hội.
-            </div>
-          </div>
 
         </div>
       </main>
