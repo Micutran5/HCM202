@@ -6,7 +6,7 @@ import videoBg from "../assets/mln-bg-h264.mp4";
 
 const LandingPage: React.FC = () => {
   const navigate = useNavigate();
-  const [showIntro, setShowIntro] = useState(false);
+  const [showIntro] = useState(false);
   const [step, setStep] = useState(0);
 
   const handleStart = () => {
