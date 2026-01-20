@@ -81,7 +81,13 @@ const GiaiDoan1Page: React.FC = () => {
               </div>
 
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight drop-shadow text-orange-300">
-                NỘI DUNG & HÌNH THỨC TỔ CHỨC CỦA KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC
+                NỘI DUNG &
+              </h1>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight drop-shadow text-orange-300">
+                HÌNH THỨC 
+              </h1>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight drop-shadow text-orange-300">
+                KHỐI ĐẠI ĐOÀN KẾT 
               </h1>
 
               <p className="text-sm md:text-base text-slate-200 max-w-2xl">
