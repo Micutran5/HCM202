@@ -124,7 +124,7 @@ const DacTrung = () => {
           <div className="text-xs uppercase tracking-widest text-slate-400 mb-2">
             TƯ TƯỞNG HỒ CHÍ MINH - CHƯƠNG V
           </div>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-slate-50 mb-4 drop-shadow-sm">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-orange-300 mb-4 drop-shadow-sm">
             VAI TRÒ – Ý NGHĨA CỦA TƯ TƯỞNG HỒ CHÍ MINH VỀ ĐẠI ĐOÀN KẾT
           </h1>
           <p className="text-lg text-slate-300 max-w-2xl mx-auto">

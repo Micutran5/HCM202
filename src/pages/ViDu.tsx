@@ -11,7 +11,7 @@ const ViDuPage: React.FC = () => {
             TƯ TƯỞNG HỒ CHÍ MINH - CHƯƠNG V · Liên hệ thực tế
           </div>
 
-          <h1 className="mt-2 text-2xl md:text-3xl font-bold leading-snug">
+          <h1 className="mt-2 text-2xl md:text-3xl font-bold leading-snug text-orange-300">
             Đại đoàn kết dân tộc trong quá trình chuẩn bị Đại hội Đảng lần thứ XIV
           </h1>
 

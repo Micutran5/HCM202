@@ -28,6 +28,7 @@ const menu = [
   },
   { label: "Chatbot", to: "/chatbot" },
   { label: "AI Usage", to: "/ai-usage" },
+  { label: "Video", to: "/video" },
 ];
 
 // ...existing code...

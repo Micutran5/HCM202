@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import QAPage from "./pages/QAPage";
 import DacTrung from "./pages/DacTrung";
 import ViDuPage from "./pages/ViDu";
+import VideoPage from "./pages/VideoPage";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
               <Route path="/qa" element={<QAPage />} />
               <Route path="/dac-trung" element={<DacTrung />} />
               <Route path="/vi-du" element={<ViDuPage />} />
+              <Route path="/video" element={<VideoPage />} />
             </Routes>
           </div>
         </main>

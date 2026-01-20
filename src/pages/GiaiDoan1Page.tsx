@@ -80,7 +80,7 @@ const GiaiDoan1Page: React.FC = () => {
                 TƯ TƯỞNG HỒ CHÍ MINH - CHƯƠNG V
               </div>
 
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight drop-shadow">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight drop-shadow text-orange-300">
                 NỘI DUNG & HÌNH THỨC TỔ CHỨC CỦA KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC
               </h1>
 
